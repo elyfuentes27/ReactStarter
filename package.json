@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "React Starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple way to start your React Project",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "gatsby": "^2.13.31",
