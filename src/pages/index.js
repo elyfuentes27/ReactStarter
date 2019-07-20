@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import Arrow from "../components/arrow"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -14,6 +15,8 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <Arrow type="back" />
+    <Arrow type="next" />
   </Layout>
 )
 
