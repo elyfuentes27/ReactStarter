@@ -1,0 +1,44 @@
+.nav {
+    position: absolute;
+    width: 40vw;
+    height: calc(100vh - 82px);
+    top: 82px;
+    right: -40vw;
+    background-color: #273039;
+    transition: right 0.5s ease-in-out;
+}
+
+.nav-open {
+    right: 0vw;
+}
+
+.nav-ul {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-li {
+    margin: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    border-radius: 30px;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

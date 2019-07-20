@@ -1,42 +1,37 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
+import Logo from "./header/logo"
+import Hamburger from "./header/hamburger"
+import Nav from "./header/nav"
+import "../styles/header.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        navOpen: false
+    };
+  }
+
+  handleToggleNav = () => {
+    this.setState({navOpen: !this.state.navOpen})
+  }
+
+  render() {
+    const {navOpen} = this.state
+    return (
+      <header>
+        <Link to="/">
+          <div className="logo-wrapper">
+            <Logo />
+          </div>
         </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+        <Hamburger navOpen={navOpen} handleToggleNav={this.handleToggleNav} />
+        <Nav navOpen={navOpen} handleToggleNav={this.handleToggleNav} />
+      </header>
+    )
+  }
 }
 
 export default Header
