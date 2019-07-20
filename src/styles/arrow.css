@@ -1,6 +1,6 @@
 .arrow {
-	width: 23px;
-	height: 20px;
+	width: 8px;
+	height: 15px;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -31,7 +31,7 @@
 }
 
 .top {
-	width: 13px;
+	width: 10px;
 	height: 2px;
 	background-color: white;
 	border-radius: 30px;
@@ -52,7 +52,7 @@
 }
 
 .bottom {
-    width: 13px;
+    width: 10px;
     height: 2px;
     background-color: white;
     border-radius: 30px;
