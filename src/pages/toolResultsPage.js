@@ -40,7 +40,7 @@ export default function toolResult() {
                         <div>
                             <List component="nav" className={classes.root} aria-label="Contacts">
                                 <div>
-                                    {i.links.map( list => <ListItemLink href={list.link}><ListItemText inset primary={list.name} /></ListItemLink>)}
+                                    {i.links.map( list => <ListItemLink href={list.link} target="_blank"><ListItemText inset primary={list.name} /></ListItemLink>)}
                                 </div>
                             </List>
                         </div>
@@ -50,5 +50,5 @@ export default function toolResult() {
             <br/>
             <Link to="/">Go Home</Link>
         </Layout>
-        )
+    )
 }

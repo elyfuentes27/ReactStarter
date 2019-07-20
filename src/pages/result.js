@@ -44,7 +44,7 @@ export default function result() {
                     if(i.name === 'Forms'){
                         return (
                             <div>
-                            {i.links.map( list => <ListItemLink href={list.link}><ListItemText inset primary={list.name} /></ListItemLink>)}
+                            {i.links.map( list => <ListItemLink href={list.link} target="_blank"><ListItemText inset primary={list.name} /></ListItemLink>)}
                             </div>
                         )
                     }
@@ -60,7 +60,7 @@ export default function result() {
                     if(i.name === 'Forms'){
                         return (
                             <div>
-                            {i.links.map( list => <ListItemLink href={list.link}><ListItemText inset primary={list.name} /></ListItemLink>)}
+                            {i.links.map( list => <ListItemLink href={list.link} target="_blank"><ListItemText inset primary={list.name} /></ListItemLink>)}
                             </div>
                         )
                     }
