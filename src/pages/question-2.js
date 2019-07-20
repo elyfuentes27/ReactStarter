@@ -3,15 +3,60 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Arrow from "../components/arrow"
+
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Second Question</h1>
-    <p>2</p>
-    <Link to="/">Go back to the homepage</Link>
-    <br/>
-    <Link to="/question-3/">Go to question 3</Link>
+    {/* Question 1 */}
+    <p>Does your application requires forms?</p>
+    <RadioGroup
+          aria-label="Form"
+          name="form"
+          className=""
+          value=""
+          onChange=""
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Simple form" />
+          <FormControlLabel value="male" control={<Radio />} label="Multuple forms" />
+          <FormControlLabel value="male" control={<Radio />} label="No" />
+    </RadioGroup> 
+    {/* Question 2 */}
+    <p>Does your application requires routing?</p>
+    <RadioGroup
+          aria-label="Form"
+          name="form"
+          className=""
+          value=""
+          onChange=""
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
+          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
+          <FormControlLabel value="male" control={<Radio />} label="No" />
+    </RadioGroup> 
+    {/* Question 3 */}
+    <p>Does your application requires routing?</p>
+    <RadioGroup
+          aria-label="Form"
+          name="form"
+          className=""
+          value=""
+          onChange=""
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
+          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
+          <FormControlLabel value="male" control={<Radio />} label="No" />
+    </RadioGroup> 
+
+    <Link to="/question-3/"> 
+      <Arrow type="next"/>
+    </Link>
+    
+    <Arrow type="back" />
+
   </Layout>
 )
 
