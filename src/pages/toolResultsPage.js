@@ -13,9 +13,9 @@ const result = () => (
         {allCommands.map( (i, index) => 
             <div>
             <h3>{i.name}</h3>
-                <ul>
-                <li key={index}>{i.link}</li>
-                </ul>
+                <div>
+                    {i.links.map( list => <a href={list.link} target="_blank"><li>{list.name}</li></a>)}
+                </div>
             </div>
             )}
     </div>
