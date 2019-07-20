@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
         maxWidth: 360,
-        color: 'black',
+        color: 'white',
         backgroundColor: 'transparent'
     },
 
