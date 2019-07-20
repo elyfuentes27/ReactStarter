@@ -14,7 +14,7 @@ const IndexPage = () => (
     <p>Comming Soon</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/question-2/">Go to page 2</Link>
     <Arrow type="back" />
     <Arrow type="next" />
   </Layout>
