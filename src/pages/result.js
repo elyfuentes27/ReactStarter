@@ -40,9 +40,9 @@ export default function result() {
         <Layout>
             <div className="body-margin-top" />
             <SEO title="result" />
-            <h2>Recommendated tools</h2>
             <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
+                <h2>Recommendated tools</h2>
                 <Paper className={classes.paper}>
                     <List component="nav" className={classes.root} aria-label="Contacts">
                     {toolsResult.map( i => {
