@@ -59,7 +59,6 @@ const IndexPage = () => (
       <span>Next</span> 
       <Arrow type="next"/>
     </Link>
-    <Arrow type="back" />
   </Layout>
 )
 
