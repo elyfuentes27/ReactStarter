@@ -35,11 +35,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Start with
           {` `}
           <a href="/">React Starter</a>
-        </footer>
+        </footer> */}
       </div>
     </>
   )
