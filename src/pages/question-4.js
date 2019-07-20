@@ -50,13 +50,11 @@ const FourthPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
 
-    <Link to="/question-3">
-      <Cta text="Back" type="back"/>
-    </Link>
-
-    <Link to="/result/">
-      <Cta text="Finish" type="next"/>
-    </Link>
+    <div className="full-width-ctas">
+      <Link to="/result/">
+        <Cta text="Finish" arrowType="next"/>
+      </Link>
+    </div>
   </Layout>
 )
 

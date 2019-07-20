@@ -48,13 +48,15 @@ const ThirdPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="Real Time" />
     </RadioGroup> 
 
-    <Link to="/">
-      <Cta text="Back" type="back"/>
-    </Link>
+    <div className="full-width-ctas">
+      <Link to="/">
+        <Cta text="Back" arrowType="back"/>
+      </Link>
 
-    <Link to="/question-4/">
-      <Cta text="Next" type="next"/>
-    </Link>
+      <Link to="/question-4/">
+        <Cta text="Next" arrowType="next"/>
+      </Link>
+    </div>
     
   </Layout>
 )
