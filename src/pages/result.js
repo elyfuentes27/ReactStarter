@@ -11,7 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import Cta from "../components/cta"
 import toolsResult from '../common/toolsResults'
 import { black } from "ansi-colors";
 
@@ -19,9 +19,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
         maxWidth: 360,
-        color: 'black',
-        backgroundColor: theme.palette.background.paper,
-    },
+        color: 'black'    },
 }));
 
 function ListItemLink(props) {
@@ -66,8 +64,11 @@ export default function result() {
                 <p>Seems like you require a lot of components for your application, a library that you may want to keep in mind is styled components, which will help you to avoid naming collisions and to keep your CSS code isolated.</p>                
             </Grid>
             </Grid>
-
-            <Link to="/question-4/">Go back to Question 4</Link>
+            <div className="full-width-ctas">
+            <Link to="/question-4/">
+                <Cta text="Go back to Question 4" arrowType="back" />
+            </Link>
+            </div>
             <br/>
             <Link to="/">Go Home</Link>
         </Layout>
