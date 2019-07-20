@@ -43,8 +43,9 @@ const IndexPage = () => (
     </RadioGroup> 
 
 
-
+    <Link to="/toolResultsPage/"> Tools </Link>
     <Link to="/question-2/"> <Arrow type="next"/></Link>
+    
     <Arrow type="back" />
   </Layout>
 )
