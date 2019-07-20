@@ -47,7 +47,7 @@ export default function toolResult() {
                     )}
             </div>
             <br/>
-            <Link to="/">Go Home</Link>
+            <Link to="/"><span className="link">Go Back to Home</span></Link>
         </Layout>
     )
 }

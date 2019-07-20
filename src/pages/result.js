@@ -70,7 +70,7 @@ export default function result() {
             </Link>
             </div>
             <br/>
-            <Link to="/">Go Home</Link>
+            <Link to="/"><span className="link">Go Back to Home</span></Link>
         </Layout>
     )
 }
