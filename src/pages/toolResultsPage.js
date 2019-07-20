@@ -30,6 +30,7 @@ export default function toolResult() {
   const classes = useStyles();
     return (
         <Layout>
+            <div className="body-margin-top" />
             <SEO title="tool result" />
             <h1>Tools Link</h1>
             <div>
