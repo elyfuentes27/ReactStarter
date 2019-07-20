@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 const result = () => (
   <Layout>
+    <div className="body-margin-top" />
     <SEO title="result" />
     <h1>Result</h1>
     <Link to="/question-4/">Go back to Question 4</Link>
