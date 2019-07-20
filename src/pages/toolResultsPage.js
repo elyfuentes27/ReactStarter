@@ -34,7 +34,7 @@ export default function toolResult() {
             <SEO title="tool result" />
             <h1>Tools Link</h1>
             <div>
-                {toolsResult.map( (i, index) => 
+                {toolsResult.map( i => 
                     <div>
                     <h3>{i.name}</h3>
                         <div>
