@@ -1,10 +1,12 @@
 {
-  "name": "React Starter",
-  "private": true,
+  "name": "react-starter",
+  "author": "Bernardo Sorlano, Bruce Ingalls, Ely Fuentes, Lin Sriuthenchai",
   "description": "A simple way to start your React Project",
+  "private": false,
+  "readme": "README.md",
   "version": "0.1.0",
-  "author": "",
   "dependencies": {
+    "@material-ui/core": "^4.2.1",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
@@ -13,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -27,11 +30,12 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "start": "npm run develop",
+    "test": "echo \"Write tests: https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
