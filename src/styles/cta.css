@@ -1,0 +1,41 @@
+.cta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #4e6172;
+    padding: 8px 10px;
+    border-radius: 3px;
+    filter: drop-shadow(5px 2px 3px black);
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #66747b;
+}
+
+.cta-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.cta-text-back {
+    order: 2;
+}
+
+.cta-text-next {
+    order: 1;
+}
+
+.cta-arrow {
+    padding: 0 5px;
+}
+
+.cta-arrow-back {
+    order: 1;
+}
+
+.cta-arrow-next {
+    order: 2;
+}

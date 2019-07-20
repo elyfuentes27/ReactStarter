@@ -2,9 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-import Arrow from "../components/arrow"
+import Cta from "../components/cta"
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -50,14 +48,12 @@ const ThirdPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="Real Time" />
     </RadioGroup> 
 
-    <Link to="/question-2">
-      <span>Back</span>   
-      <Arrow type="back"/>
+    <Link to="/">
+      <Cta text="Back" type="back"/>
     </Link>
 
     <Link to="/question-4/">
-      <span>Next</span>  
-      <Arrow type="next"/>
+      <Cta text="Next" type="next"/>
     </Link>
     
   </Layout>

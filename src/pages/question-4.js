@@ -2,9 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-import Arrow from "../components/arrow"
+import Cta from "../components/cta"
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -52,12 +51,11 @@ const FourthPage = () => (
     </RadioGroup> 
 
     <Link to="/question-3">
-      <span>Back</span>   
-      <Arrow type="back"/>
+      <Cta text="Back" type="back"/>
     </Link>
 
     <Link to="/result/">
-      <span>Finish</span>  
+      <Cta text="Finish" type="next"/>
     </Link>
   </Layout>
 )

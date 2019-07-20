@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Arrow from "../components/arrow"
+import Cta from "../components/cta"
 import SEO from "../components/seo"
 
 import Radio from '@material-ui/core/Radio';
@@ -55,8 +55,7 @@ const IndexPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="10+" />
     </RadioGroup> 
     <Link to="/question-2/">
-      <span>Next</span> 
-      <Arrow type="next"/>
+      <Cta text="Next" type="next" />
     </Link>
     <Link to="/toolResultsPage/"> Tools </Link>
   </Layout>
