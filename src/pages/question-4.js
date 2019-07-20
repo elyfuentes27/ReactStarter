@@ -56,7 +56,7 @@ const FourthPage = () => (
       <Arrow type="back"/>
     </Link>
 
-    <Link to="/toolResultsPage/">
+    <Link to="/result/">
       <span>Finish</span>  
     </Link>
   </Layout>
