@@ -3,6 +3,12 @@
 	height: 20px;
 	position: relative;
 	cursor: pointer;
+	opacity: 1;
+	transition: opacity 0.4s;
+}
+
+.arrow:hover {
+	opacity: 0.6;
 }
 
 .base {
