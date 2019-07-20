@@ -9,7 +9,6 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -41,10 +40,25 @@ const IndexPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
+    {/* Question 3 */}
+    <p>Does your application requires routing?</p>
+    <RadioGroup
+          aria-label="Form"
+          name="form"
+          className=""
+          value=""
+          onChange=""
+        >
+          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
+          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
+          <FormControlLabel value="male" control={<Radio />} label="No" />
+    </RadioGroup> 
 
 
-
-    <Link to="/question-2/"> <Arrow type="next"/></Link>
+    <Link to="/question-2/">
+      <span>Next</span> 
+      <Arrow type="next"/>
+    </Link>
     <Arrow type="back" />
   </Layout>
 )
