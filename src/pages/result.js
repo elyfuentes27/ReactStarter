@@ -19,7 +19,13 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
         maxWidth: 360,
-        color: 'black'    },
+        color: 'black',
+        backgroundColor: 'transparent'
+    },
+
+    paper: {
+        backgroundColor: 'transparent'
+    }
 }));
 
 function ListItemLink(props) {
