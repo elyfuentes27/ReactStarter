@@ -7,7 +7,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4e6172;
+  background-color: #2e3a44;
+  color: white;
 }
 article,
 aside,
@@ -43,6 +44,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: white;
 }
 a:active,
 a:hover {
@@ -64,6 +66,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: white;
 }
 mark {
   background-color: #ff0;
@@ -187,6 +190,7 @@ textarea {
 }
 html {
   font: 112.5%/1.45em georgia, serif;
+  color: white;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +204,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  /* color: hsla(0, 0%, 0%, 0.8); */
+  color: white;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -237,6 +242,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  color: white;
 }
 h2 {
   margin-left: 0;
@@ -254,6 +260,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  color: white;
 }
 h3 {
   margin-left: 0;
@@ -271,6 +278,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
+  color: white;
 }
 h4 {
   margin-left: 0;
@@ -288,6 +296,7 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  color: white;
 }
 h5 {
   margin-left: 0;
@@ -305,6 +314,7 @@ h5 {
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
   line-height: 1.1;
+  color: white;
 }
 h6 {
   margin-left: 0;
@@ -322,6 +332,7 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
+  color: white;
 }
 hgroup {
   margin-left: 0;
@@ -332,6 +343,7 @@ hgroup {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: white;
 }
 ul {
   margin-left: 1.45rem;
@@ -344,6 +356,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+  color: white;
 }
 ol {
   margin-left: 1.45rem;
@@ -356,6 +369,7 @@ ol {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+  color: white;
 }
 dl {
   margin-left: 0;
@@ -386,6 +400,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: white;
 }
 figure {
   margin-left: 0;
@@ -486,6 +501,7 @@ hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
+  color: white;
 }
 address {
   margin-left: 0;
@@ -496,12 +512,14 @@ address {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: white;
 }
 b {
   font-weight: bold;
 }
 strong {
   font-weight: bold;
+  color: white;
 }
 dt {
   font-weight: bold;
@@ -511,22 +529,27 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  color: white;
 }
 ol li {
   padding-left: 0;
+  color: white;
 }
 ul li {
   padding-left: 0;
+  color: white;
 }
 li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
+  color: white;
 }
 li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
+  color: white;
 }
 blockquote *:last-child {
   margin-bottom: 0;
@@ -620,4 +643,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.body-margin-top {
+  height: calc(82px + 1.45rem);
 }
