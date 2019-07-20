@@ -61,6 +61,9 @@ export default function result() {
 
                 <h3>UI Libraries.</h3>            
                 <p>If your app requires a low to medium level of customization you can use UI components from libraries like Material UI, Ant design or Bootstrap.</p>
+
+                <h3>Styling components.</h3>            
+                <p>Seems like you require a lot of components for your application, a library that you may want to keep in mind is styled components, which will help you to avoid naming collisions and to keep your CSS code isolated.</p>                
             </Grid>
             </Grid>
 
