@@ -11,7 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import Cta from "../components/cta"
 import toolsResult from '../common/toolsResults'
 import { black } from "ansi-colors";
 
@@ -19,9 +19,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
         maxWidth: 360,
-        color: 'black',
-        backgroundColor: theme.palette.background.paper,
-    },
+        color: 'black'    },
 }));
 
 function ListItemLink(props) {
@@ -63,8 +61,11 @@ export default function result() {
                 <p>If your app requires a low to medium level of customization you can use UI components from libraries like Material UI, Ant design or Bootstrap.</p>
             </Grid>
             </Grid>
-
-            <Link to="/question-4/">Go back to Question 4</Link>
+            <div className="full-width-ctas">
+            <Link to="/question-4/">
+                <Cta text="Go back to Question 4" arrowType="back" />
+            </Link>
+            </div>
             <br/>
             <Link to="/">Go Home</Link>
         </Layout>
