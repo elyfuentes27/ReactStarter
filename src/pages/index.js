@@ -54,9 +54,11 @@ const IndexPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
-    <Link to="/question-2/">
-      <Cta text="Next" type="next" />
-    </Link>
+    <div className="full-width-ctas">
+      <Link to="/question-2/">
+        <Cta text="Next" arrowType="next" />
+      </Link>
+    </div>
     <Link to="/toolResultsPage/"> Tools </Link>
   </Layout>
 )

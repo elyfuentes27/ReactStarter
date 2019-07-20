@@ -649,3 +649,9 @@ pre tt:after {
 .body-margin-top {
   height: calc(82px + 1.45rem);
 }
+
+.full-width-ctas {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}

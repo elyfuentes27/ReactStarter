@@ -51,13 +51,15 @@ const SecondPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
 
-    <Link to="/">
-      <Cta text="Back" type="back"/>
-    </Link>
+    <div className="full-width-ctas">
+      <Link to="/">
+        <Cta text="Back" arrowType="back"/>
+      </Link>
 
-    <Link to="/question-3/">
-      <Cta text="Next" type="next"/>
-    </Link>
+      <Link to="/question-3/">
+        <Cta text="Next" arrowType="next"/>
+      </Link>
+    </div>
     
 
   </Layout>
