@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Arrow from "../components/arrow"
 
+import Arrow from "../components/arrow"
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -51,11 +51,16 @@ const SecondPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
 
-    <Link to="/question-3/"> 
+    <Link to="/">
+      <span>Back</span>   
+      <Arrow type="back"/>
+    </Link>
+
+    <Link to="/question-3/">
+      <span>Next</span>  
       <Arrow type="next"/>
     </Link>
     
-    <Arrow type="back" />
 
   </Layout>
 )

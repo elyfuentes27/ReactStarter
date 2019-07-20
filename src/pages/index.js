@@ -53,12 +53,11 @@ const IndexPage = () => (
           <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
-
-
+    <Link to="/question-2/">
+      <span>Next</span> 
+      <Arrow type="next"/>
+    </Link>
     <Link to="/toolResultsPage/"> Tools </Link>
-    <Link to="/question-2/"> <Arrow type="next"/></Link>
-    
-    <Arrow type="back" />
   </Layout>
 )
 
