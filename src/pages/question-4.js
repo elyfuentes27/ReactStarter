@@ -11,8 +11,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const FourthPage = () => (
   <Layout>
+    <div className="body-margin-top" />
     {/* Question 1 */}
-    <p>Does your application requires forms?</p>
+    <p>Do have specific design needs (custom design)?</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -20,12 +21,11 @@ const FourthPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple form" />
-          <FormControlLabel value="male" control={<Radio />} label="Multuple forms" />
-          <FormControlLabel value="male" control={<Radio />} label="No" />
+          <FormControlLabel value="female" control={<Radio />} label="Low level of customization" />
+          <FormControlLabel value="male" control={<Radio />} label="High level of customization" />
     </RadioGroup> 
     {/* Question 2 */}
-    <p>Does your application requires routing?</p>
+    <p>Approximate number of components including nested components</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -33,12 +33,12 @@ const FourthPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
-          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
-          <FormControlLabel value="male" control={<Radio />} label="No" />
+          <FormControlLabel value="female" control={<Radio />} label="30" />
+          <FormControlLabel value="male" control={<Radio />} label="10+" />
+          <FormControlLabel value="male" control={<Radio />} label="300+" />
     </RadioGroup> 
     {/* Question 3 */}
-    <p>Does your application requires routing?</p>
+    <p>Does your application requires themes?</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -46,14 +46,18 @@ const FourthPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
-          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
+          <FormControlLabel value="female" control={<Radio />} label="Single theme" />
+          <FormControlLabel value="male" control={<Radio />} label="Multiple themes" />
           <FormControlLabel value="male" control={<Radio />} label="No" />
     </RadioGroup> 
 
-    <Link to="/result/">
+    <Link to="/question-3">
+      <span>Back</span>   
+      <Arrow type="back"/>
+    </Link>
+
+    <Link to="/toolResultsPage/">
       <span>Finish</span>  
-      <Arrow type="next"/>
     </Link>
   </Layout>
 )

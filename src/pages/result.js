@@ -29,6 +29,7 @@ export default function result() {
   const classes = useStyles();
     return (
         <Layout>
+            <div className="body-margin-top" />
             <SEO title="result" />
             <h1>Result</h1>
 
