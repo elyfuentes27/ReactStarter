@@ -12,7 +12,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 const SecondPage = () => (
   <Layout>
     {/* Question 1 */}
-    <p>Does your application requires forms?</p>
+    <p>Is your aplication visualizing data?</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -20,12 +20,12 @@ const SecondPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple form" />
-          <FormControlLabel value="male" control={<Radio />} label="Multuple forms" />
-          <FormControlLabel value="male" control={<Radio />} label="No" />
+          <FormControlLabel value="female" control={<Radio />} label="Simple data sets" />
+          <FormControlLabel value="male" control={<Radio />} label="Complex graphs" />
+          <FormControlLabel value="male" control={<Radio />} label="Tables and reports" />
     </RadioGroup> 
     {/* Question 2 */}
-    <p>Does your application requires routing?</p>
+    <p>Is your app going to be deployed across multiple regions?</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -33,12 +33,11 @@ const SecondPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
-          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
-          <FormControlLabel value="male" control={<Radio />} label="No" />
+          <FormControlLabel value="female" control={<Radio />} label="Single region" />
+          <FormControlLabel value="male" control={<Radio />} label="Multiple regions" />
     </RadioGroup> 
     {/* Question 3 */}
-    <p>Does your application requires routing?</p>
+    <p>Do you require multiple languages?</p>
     <RadioGroup
           aria-label="Form"
           name="form"
@@ -46,9 +45,8 @@ const SecondPage = () => (
           value=""
           onChange=""
         >
-          <FormControlLabel value="female" control={<Radio />} label="Simple routing" />
-          <FormControlLabel value="male" control={<Radio />} label="Nested routing" />
-          <FormControlLabel value="male" control={<Radio />} label="No" />
+          <FormControlLabel value="female" control={<Radio />} label="Single language" />
+          <FormControlLabel value="male" control={<Radio />} label="Multiple languages" />
     </RadioGroup> 
 
     <Link to="/">
