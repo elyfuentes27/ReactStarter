@@ -11,6 +11,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const FourthPage = () => (
   <Layout>
+    <div className="body-margin-top" />
     {/* Question 1 */}
     <p>Do have specific design needs (custom design)?</p>
     <RadioGroup

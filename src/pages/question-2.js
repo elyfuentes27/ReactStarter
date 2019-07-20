@@ -11,6 +11,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const SecondPage = () => (
   <Layout>
+    <div className="body-margin-top" />
     {/* Question 1 */}
     <p>Is your aplication visualizing data?</p>
     <RadioGroup

@@ -12,6 +12,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="body-margin-top" />
     {/* <h1>Hi</h1> */}
     <p>Welcome to ReactStarter. We kindly ask you to respond some questions in order to provide you some react recommendations.</p>
     {/* Question 1 */}

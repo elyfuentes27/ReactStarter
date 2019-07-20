@@ -15,7 +15,7 @@
 .base {
 	width: 22px;
 	height: 2px;
-	background-color: black;
+	background-color: white;
 	border-radius: 30px;
 	position: absolute;
 	top: 50%;
@@ -33,7 +33,7 @@
 .top {
 	width: 13px;
 	height: 2px;
-	background-color: black;
+	background-color: white;
 	border-radius: 30px;
 	position: absolute;
 	top: 55%;
@@ -54,7 +54,7 @@
 .bottom {
     width: 13px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     border-radius: 30px;
 	position: absolute;
     top: 45%;
