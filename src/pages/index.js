@@ -59,7 +59,7 @@ const IndexPage = () => (
         <Cta text="Next" arrowType="next" />
       </Link>
     </div>
-    <Link to="/toolResultsPage/"> Tools </Link>
+    <Link to="/toolResultsPage/"> <span className="link">Tools</span> </Link>
   </Layout>
 )
 

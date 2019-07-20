@@ -14,8 +14,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
-        maxWidth: 360,
-        backgroundColor: theme.palette.background.paper,
+        maxWidth: 360
     },
 }));
 
@@ -35,7 +34,7 @@ export default function toolResult() {
             <h1>Tools Link</h1>
             <div>
                 {toolsResult.map( (i, index) => 
-                    <div>
+                    <div style={{marginBottom: "25px"}}>
                     <h3>{i.name}</h3>
                         <div>
                             <List component="nav" className={classes.root} aria-label="Contacts">
