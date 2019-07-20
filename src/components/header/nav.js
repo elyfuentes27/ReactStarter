@@ -12,7 +12,7 @@ const Nav = ({navOpen, handleToggleNav}) => (
                 </Link>
             </li>
             <li className="nav-li" onClick={handleToggleNav}>
-                <Link to="/" className="nav-link" >
+                <Link to="/toolResultsPage/" className="nav-link" >
                     React Resources
                 </Link>
             </li>
