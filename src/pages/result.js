@@ -13,7 +13,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Cta from "../components/cta"
 import toolsResult from '../common/toolsResults'
-import { black } from "ansi-colors";
 
 const useStyles = makeStyles(theme => ({
     root: {

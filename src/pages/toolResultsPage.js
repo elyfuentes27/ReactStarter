@@ -34,12 +34,13 @@ export default function toolResult() {
             <h1>Tools Link</h1>
             <div>
                 {toolsResult.map( (i, index) => 
-                    <div style={{marginBottom: "25px"}}>
+                    <div key={index} style={{marginBottom: "25px"}}>
                     <h3>{i.name}</h3>
                         <div>
                             <List component="nav" className={classes.root} aria-label="Contacts">
                                 <div>
-                                    {i.links.map( list => <ListItemLink href={list.link} target="_blank"><ListItemText inset primary={list.name} /></ListItemLink>)}
+                                    {i.links.map( (list, index) => <ListItemLink href={list.link} target="_blank" key={index}><ListItemText inset primary={list.name}
+                                     /></ListItemLink>)}
                                 </div>
                             </List>
                         </div>
