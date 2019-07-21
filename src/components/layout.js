@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "../styles/layout.css"
+import { relative } from "path";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,6 +33,8 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0px 3rem 1.45rem`,
           paddingTop: 0,
+          position: 'relative',
+          zIndex: 0
         }}
       >
         <main>{children}</main>
